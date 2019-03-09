@@ -29,7 +29,7 @@ spec:
           readOnly: true
         - mountPath: /etc/ssl/certs
           name: ssl-certs-host
-          readOnly: true
+          readOnly: 'true'
   volumes:
     - hostPath:
         path: /etc/kubernetes/ssl
@@ -37,3 +37,5 @@ spec:
     - hostPath:
         path: /usr/share/ca-certificates
       name: ssl-certs-host
+yedittest: yedittest
+metadata-namespace: openshift-is-awesome
